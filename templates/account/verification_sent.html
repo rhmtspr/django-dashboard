@@ -1,0 +1,33 @@
+{% extends 'account/base_account.html' %}
+{% load static %}
+{% load i18n %}
+{% load account %}
+{% block title %}{% trans "Confirm E-mail Address" %}{% endblock title %}
+
+{% block content %}
+
+<div class="mb-0 w-screen lg:w-[500px] card shadow-lg border-none shadow-slate-100 relative">
+    <div class="!px-10 !py-12 card-body">
+        <a href="#!">
+            <img src="{% static 'images/logo-light.png' %}" alt="" class="hidden h-6 mx-auto dark:block">
+            <img src="{% static 'images/logo-dark.png' %}" alt="" class="block h-6 mx-auto dark:hidden">
+        </a>
+
+        {% for message in messages %}
+        <div class="relative px-5 py-3 border-2 bg-violet-50 text-violet-700 border-violet-100 rounded {{ message.tags }} mb-3"
+            role="alert">
+            <strong>{{ message }}</strong>
+        </div>
+        {% endfor %}
+
+        <p class="mt-4 pt-2 text-center">{% blocktrans %}We have sent an e-mail to you for verification. Follow the link
+            provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.
+            {% endblocktrans %}</p>
+
+        <div class="pt-10 text-center">
+            <img src="{% static 'images/auth-email.png' %}" alt="" class="block w-2/3 mx-auto">
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

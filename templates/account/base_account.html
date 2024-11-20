@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth group" data-layout="vertical" data-sidebar="light" data-sidebar-size="lg" data-mode="light" data-topbar="light" data-skin="default" data-navbar="sticky" data-content="fluid" dir="ltr">
+
+<head>
+  <script type="module"></script>
+
+
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %} | Tailwick - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="Minimal Admin & Dashboard Template" name="description">
+    <meta content="Themesdesign" name="author">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+    <!-- Layout config Js -->
+    <script src="{% static 'js/layout.js' %}"></script>
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="{% static 'libs/flatpickr/flatpickr.min.css' %}">
+    <!--choices -->
+    <link rel="stylesheet" href="{% static 'libs/choices.js/public/assets/styles/choices.min.css' %}">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
+
+</head>
+
+<body class="flex items-center justify-center min-h-screen py-16 lg:py-10 bg-slate-50 dark:bg-zink-800 dark:text-zink-100 font-public">
+    {% block content %}
+    {% endblock content %}
+    
+
+    <script src="{% static 'libs/choices.js/public/assets/scripts/choices.min.js' %}"></script>
+    <script src="{% static 'libs/@popperjs/core/umd/popper.min.js' %}"></script>
+    <script src="{% static 'libs/tippy.js/tippy-bundle.umd.min.js' %}"></script>
+    <script src="{% static 'libs/simplebar/simplebar.min.js' %}"></script>
+    <script src="{% static 'libs/prismjs/prism.js' %}"></script>
+    <script src="{% static 'libs/lucide/umd/lucide.js' %}"></script>
+    <script src="{% static 'js/tailwick.bundle.js' %}"></script>
+    {% block extra_js %}
+    {% endblock extra_js %}
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %} Ecommerce {% endblock title %}
+{% block pagetitle %}
+{% include "partials/page-title.html" with pagetitle="Dashboard" title="Ecommerce" %}
+{% endblock pagetitle %}
+
+{% block content %}
+{% include 'partials/content.html' %}
+{% endblock content %}
+
+{% block extra_js %}
+<!--apexchart js-->
+<script src="{% static 'libs/apexcharts/apexcharts.min.js' %}"></script>
+
+<!--dashboard ecommerce init js-->
+<script src="{% static 'js/pages/dashboards-ecommerce.init.js' %}"></script>
+{% endblock extra_js %}

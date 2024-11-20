@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth group" data-layout="vertical" data-sidebar="light" data-sidebar-size="lg" data-mode="light" data-topbar="light" data-skin="default" data-navbar="sticky" data-content="fluid" dir="ltr">
+
+<head>
+  <script type="module"></script>
+
+
+    <meta charset="utf-8">
+    <title>LogOut | Tailwick - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="Minimal Admin & Dashboard Template" name="description">
+    <meta content="Themesdesign" name="author">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+    <!-- Layout config Js -->
+    <script src="{% static 'js/layout.js' %}"></script>
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="{% static 'libs/flatpickr/flatpickr.min.css' %}">
+    <!--choices -->
+    <link rel="stylesheet" href="{% static 'libs/choices.js/public/assets/styles/choices.min.css' %}">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
+
+</head>
+
+<body class="font-public">
+
+    <div class="relative flex flex-col w-full overflow-hidden xl:flex-row to-custom-800 bg-gradient-to-r from-custom-900 dark:to-custom-900 dark:from-custom-950">
+        <div class="absolute inset-0 bg-pattern-2 opacity-20">
+            <img src="{% static '$1' %}" alt="">
+        </div>
+        <div class="min-h-[calc(100vh_-_theme('spacing.4')_*_2)] mx-3 lg:w-[40rem] shrink-0 px-10 py-14 flex items-center justify-center m-4 bg-white rounded z-10 relative dark:bg-zink-700 dark:text-zink-100 md:mx-auto xl:mx-4">
+            <div class="flex flex-col w-full h-full">
+                <div>
+                    <div class="relative dropdown text-end">
+                        <button type="button" class="inline-flex items-center gap-3 transition-all duration-200 ease-linear dropdown-toggle btn border-slate-200 dark:border-zink-500 group/items focus:border-custom-500 dark:focus:border-custom-500" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            <img src="{% static 'images/flags/us.svg' %}" alt="" class="object-cover h-5 rounded-full">
+                            <h6 class="text-base font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">English</h6>
+                        </button>
+
+                        <div class="absolute z-50 hidden p-3 mt-1 text-left list-none bg-white rounded-md shadow-md dropdown-menu min-w-[9rem] flex flex-col gap-3 dark:bg-zink-600" aria-labelledby="dropdownMenuButton">
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/us.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">English</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/es.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">Spanish</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/de.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">German</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/fr.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">French</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/jp.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">Japanese</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/it.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">Italian</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/ru.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">Russian</h6>
+                            </a>
+                            <a href="#!" class="flex items-center gap-3 group/items">
+                                <img src="{% static 'images/flags/ae.svg' %}" alt="" class="object-cover h-4 rounded-full">
+                                <h6 class="text-sm font-medium transition-all duration-200 ease-linear text-slate-600 group-hover/items:text-custom-500 dark:text-zink-200 dark:group-hover/items:text-custom-500">Arabic</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-auto">
+                    <div class="mt-8 text-center">
+                    <div class="mb-4 text-center">
+                        <i data-lucide="log-out" class="size-6 mx-auto text-purple-500 fill-purple-100"></i>
+                    </div>
+                    <h4 class="mb-2 text-custom-500 dark:text-custom-500">You are Logged Out</h4>
+                    <p class="mb-8 text-slate-500 dark:text-zink-200">Thank you for using tailwick admin template</p>
+                </div>
+                
+                <a href="{% url 'pages:dynamic_template_pages_auth' template_name='auth-login-basic' %}" class="w-full text-white transition-all duration-200 ease-linear btn bg-custom-500 border-custom-500 hover:text-white hover:bg-custom-600 hover:border-custom-600 focus:text-white focus:bg-custom-600 focus:border-custom-600 focus:ring focus:ring-custom-100 active:text-white active:bg-custom-600 active:border-custom-600 active:ring active:ring-custom-100 dark:ring-custom-400/20">Sign In</a>
+                </div>
+                <div class="mt-5">
+                    <p class="mb-0 text-center text-15 text-slate-500 dark:text-zink-200">©
+                        <script>document.write(new Date().getFullYear())</script> Tailwick. Crafted with <i class="text-red-500 ri-heart-fill"></i> by <a href="http://themesdesign.in" class="underline transition-all duration-200 ease-linear text-slate-800 dark:text-zink-50 hover:text-custom-500 dark:hover:text-custom-500">Themesdesign</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="relative z-10 flex items-center justify-center min-h-screen px-10 text-center grow py-14">
+            <div>
+                <a href="#!"><img src="{% static 'images/logo-light.png' %}" alt="" class="block mx-auto mb-14 h-7"></a>
+                <img src="{% static 'images/auth-modern.png' %}" alt="" class="block object-cover mx-auto shadow-lg md:max-w-md rounded-xl shadow-custom-800">
+                <div class="mt-10 text-center">
+                    <h3 class="mt-4 mb-3 capitalize text-custom-50">Tools for crafting your business's brand identity</h3>
+                    <p class="max-w-2xl text-custom-300 text-16">Unlock the potential of our versatile branding tools, designed to empower your business in shaping a distinctive and impactful brand. Elevate your business's image and leave a lasting impression with our comprehensive branding solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'libs/choices.js/public/assets/scripts/choices.min.js' %}"></script>
+    <script src="{% static 'libs/@popperjs/core/umd/popper.min.js' %}"></script>
+    <script src="{% static 'libs/tippy.js/tippy-bundle.umd.min.js' %}"></script>
+    <script src="{% static 'libs/simplebar/simplebar.min.js' %}"></script>
+    <script src="{% static 'libs/prismjs/prism.js' %}"></script>
+    <script src="{% static 'libs/lucide/umd/lucide.js' %}"></script>
+    <script src="{% static 'js/tailwick.bundle.js' %}"></script>
+    <script src="{% static 'js/pages/auth-two-steps.init.js' %}"></script>
+
+</body>
+
+</html>
