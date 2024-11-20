@@ -4,27 +4,24 @@
 ```
 python -m venv <name>
 ```
-3. move the directory
+3. move the directory.
 ```
 cd django-dashboard/
 ```
-3. Install all necessary packages (python).
+4. Install all necessary packages (python).
 ```
 pip install -r requirements.txt
 ```
-4. Install all necessary packages (javascript).
-```
-npm install
-```
-4. make migrations
+5. make migrations.
 ```
 python manage.py makemigrations
 ```
-5. apply the migrations
+6. apply the migrations.
 ```
 python manage.py migrate
 ```
-6. run the server
+7. run the server.
 ```
 python manage.py runserver
 ```
+8. open it on browser.
